@@ -1,24 +1,27 @@
-<section class="table-section">
-    <button id="get-button">Get movie List</button>
-    <table>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Year</th>
-            <th>Category</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tbody>
-            <tr *ngFor="let movies of list$ | async">
-              <td>{{ title.year }}</td>
-              <td>{{ year.name }}</td>
-              <td>{{ category.name }}</td>
-          
-              
-            </tr>
-          </tbody>
-        </tbody>
-    </table>
+<section class="table-section my-5">
+  
+  <button (click)="getMovies()" id="get-button">Get movie List</button>
+
+
+  <table class="table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Year</th>
+          <th>Category</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-row" *ngFor="let movie of movies$ | async">
+          <td>{{ movie.title }}</td>
+          <td>{{ movie.year }}</td>
+          <td>{{ movie.category }}</td>
+          <td>
+              <button (click)="deleteMovie(movie.id)" id="delete-button" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+  </table>
+
 </section>

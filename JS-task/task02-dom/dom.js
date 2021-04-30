@@ -15,7 +15,7 @@ function changeOuterLinks() {
     e.style.border = "1px solid blue";
     e.style.padding = "16px";
   });
-  
+} 
  changeOuterLinks();
 
 export { changeOuterLinks };

@@ -8,8 +8,11 @@ const movieList = [
     { title: 'Top Gun', year: 1990, timeInMinute: 100 }
 ]
 
-function movieFilter(list, year, maxTimeInMinutes) {
+Function movieFilter(list, year, maxTimeInMinutes) {
+    return list.filter(
+        (item) => item.year == year && item.timeInMinute <= maxTimeInMinutes
+      )
+      .map((item) => item.title);
+  }
 
-}
-
-export { movieFilter };
+  export { movieFilter };

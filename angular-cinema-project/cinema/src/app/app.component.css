@@ -1,0 +1,15 @@
+.category-section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.category-section button {
+    display: block;
+    width: 150px;
+    background: rgb(73, 73, 65);
+    color: rgb(214, 176, 106);
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    margin: 3% 3%;
+}

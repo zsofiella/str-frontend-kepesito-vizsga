@@ -1,0 +1,11 @@
+{
+    "movies": [
+        { "id": 1, "title": "Vissza a jövőbe", "year": 1990, "Category": "Fantasy" },
+        { "id": 2, "title": "Titanic", "year": 1997, "Category": "Drama" },
+        { "id": 3, "title": "Charlie angyalai", "year": 2003, "Category": "Action" },
+        { "id": 4, "title": "Robotzsaru", "year": 1997, "Category": "Action" },
+        { "id": 5, "title": "Hangtalanul", "year": 2015, "Category": "Fantasy" },
+        { "id": 6, "title": "Csillagok között", "year": 2020, "Category": "Fantasy" },
+        { "id": 7, "title": "Top Gun", "year": 1990, "Category": "Action" }
+    ]
+}
